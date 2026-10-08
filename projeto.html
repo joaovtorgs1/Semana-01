@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Tecnologia</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Blog de Tecnologia</h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#artigos">Artigos</a>
+            <a href="#inscricao">Inscrição</a>
+        </nav>
+    </header>
+
+    <main id="artigos">
+
+        <article>
+            <h2>Introdução à Programação</h2>
+
+            <p>
+                A programação é uma área importante da tecnologia e permite
+                criar sistemas, aplicativos e soluções para diversos problemas.
+                Aprender os fundamentos da programação é o primeiro passo para
+                desenvolver projetos cada vez mais completos.
+            </p>
+
+            <img
+                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
+                alt="Pessoa programando em um computador">
+        </article>
+
+        <article>
+            <h2>Importância do Desenvolvimento Web</h2>
+
+            <p>
+                O desenvolvimento web permite criar páginas e aplicações
+                acessíveis pela internet. HTML é utilizado para estruturar
+                o conteúdo, enquanto outras tecnologias podem ser utilizadas
+                para estilizar e adicionar interatividade às páginas.
+            </p>
+
+            <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                alt="Computador exibindo código de programação">
+        </article>
+
+    </main>
+
+    <aside id="inscricao">
+
+        <h2>Inscreva-se no Blog</h2>
+
+        <form method="get">
+
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        minlength="3"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="idade">Idade:</label>
+                    <input
+                        type="number"
+                        id="idade"
+                        name="idade"
+                        min="18"
+                        max="120"
+                        required
+                    >
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Interesses</legend>
+
+                <p>
+                    <label for="assunto">Escolha um assunto:</label>
+
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="programacao">Programação</option>
+                        <option value="desenvolvimento-web">
+                            Desenvolvimento Web
+                        </option>
+                        <option value="tecnologia">
+                            Tecnologia
+                        </option>
+                    </select>
+                </p>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="termos"
+                        name="termos"
+                        value="aceito"
+                        required
+                    >
+
+                    <label for="termos">
+                        Aceito os termos de inscrição
+                    </label>
+                </p>
+            </fieldset>
+
+            <button type="submit">Enviar inscrição</button>
+
+        </form>
+
+    </aside>
+
+    <footer id="inicio">
+        <p>&copy; 2026 Blog de Tecnologia. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
